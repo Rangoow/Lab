@@ -26,7 +26,7 @@ jobs:
         run: npx nx affected -t test --parallel=3 --configuration=ci
 
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@e0b68c6749509c5f83f984dd99a76a1c1a231044 # v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
 
